@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>پنل مدیریت بوتیک علی</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>پنل مدیریت</h1>
+    <p>مدیریت محصولات و سفارش‌ها</p>
+  </header>
+
+  <section class="admin-panel">
+    <h2>افزودن محصول جدید</h2>
+    <form>
+      <label>نام محصول:<br>
+        <input type="text" required>
+      </label><br><br>
+      <label>قیمت:<br>
+        <input type="number" required>
+      </label><br><br>
+      <label>دسته‌بندی:<br>
+        <select>
+          <option>مردانه</option>
+          <option>زنانه</option>
+          <option>بچگانه</option>
+          <option>اکسسوری</option>
+        </select>
+      </label><br><br>
+      <label>تصویر محصول (لینک):<br>
+        <input type="url">
+      </label><br><br>
+      <button type="submit">افزودن محصول</button>
+    </form>
+
+    <hr>
+
+    <h2>لیست سفارش‌ها</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>نام مشتری</th>
+          <th>محصول</th>
+          <th>تعداد</th>
+          <th>وضعیت</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>علی رضایی</td>
+          <td>تی‌شرت مردانه</td>
+          <td>۲</td>
+          <td>در انتظار ارسال</td>
+        </tr>
+        <tr>
+          <td>مریم احمدی</td>
+          <td>اکسسوری زنانه</td>
+          <td>۱</td>
+          <td>ارسال‌شده</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>© بوتیک علی | پنل مدیریت</p>
+  </footer>
+</body>
+</html>
